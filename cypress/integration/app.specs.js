@@ -3,6 +3,6 @@ describe("React TodoMVC", () =>{
         cy.visit("http://localhost:8888")
         cy.get(".new-todo").type("Buy Milk{enter}").type("Learn Cypress{enter}")
         
-        cy.get(".todo-list li").should("have.length", 1)
+        cy.get(".todo-list li").should("have.length", 2)
     })
 })
