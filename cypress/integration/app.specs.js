@@ -1,4 +1,12 @@
 describe("React TodoMVC", () =>{
+    const TODO_ITEM_ONE = 'Buy Milk'
+
+    const TODO_ITEM_TWO = 'Practice JavaScript'
+
+    const TODO_ITEM_THREE = 'Get Files Done'
+
+    
+
     beforeEach(()=>{
         cy.visit("http://localhost:8888")
     })
@@ -12,9 +20,9 @@ describe("React TodoMVC", () =>{
     })
     it("add three todos", () => {
 
-        cy.get(".new-todo").type("Buy Milk{enter} ")
-        cy.get(".new-todo").type("Practice JavaScript{enter} ")
-        cy.get(".new-todo").type("Get files done{enter} ")
+        cy.get(".new-todo").type(`${TODO_ITEM_ONE}{enter}`)
+        cy.get(".new-todo").type(`${TODO_ITEM_TWO}{enter}`)
+        cy.get(".new-todo").type(`${TODO_ITEM_THREE}{enter}`)
 
     })
 
