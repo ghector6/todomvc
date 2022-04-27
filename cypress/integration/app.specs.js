@@ -5,4 +5,9 @@ describe("React TodoMVC", () =>{
         
         cy.get(".todo-list li").should("have.length", 2)
     })
+    it("add three todos", () => {
+        
+    })
+
+
 })
