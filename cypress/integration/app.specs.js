@@ -12,6 +12,10 @@ describe("React TodoMVC", () =>{
     })
     it("add three todos", () => {
 
+        cy.get(".new-todo").type("Buy Milk{enter} ")
+        cy.get(".new-todo").type("Practice JavaScript{enter} ")
+        cy.get(".new-todo").type("Get files done{enter} ")
+
     })
 
 
