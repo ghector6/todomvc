@@ -16,7 +16,7 @@ describe("React TodoMVC", () =>{
         
         cy.get(".new-todo").type("Buy Milk{enter}").type("Learn Cypress{enter}")
         
-        cy.get(".todo-list li").should("have.length", 2)
+        cy.get(".todo-list li").eq(0).find("label").should("contain", TODO_ITEM_ONE)
     })
     it("add three todos", () => {
 
