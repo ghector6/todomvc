@@ -12,7 +12,7 @@ Cypress.Commands.add("createDefaultTodos", () => {
 
         .type(`${TODO_ITEM_TWO}{enter}`)
 
-        .type(`${TODO_ITEM_ONE}{enter}`)
+        .type(`${TODO_ITEM_THREE}{enter}`)
 
 
 })
